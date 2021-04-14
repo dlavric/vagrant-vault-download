@@ -22,3 +22,10 @@ $ cd vagrant-vault-download
 $ vagrant up
 $ vagrant provision
 ```
+
+- Check the version of Vault inside Vagrant VM:
+
+```shell
+$ vagrant ssh
+$ vault version
+```
