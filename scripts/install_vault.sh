@@ -5,7 +5,7 @@ which curl wget unzip jq &>/dev/null || {
   yum install -y curl wget unzip jq
 }
 
-# VAULT variable is set in th Vagrantfile
+# VAULT variable is set in the Vagrantfile
 # if not set, we go for the latest version
 
 [ "${VAULT}" ] || {
