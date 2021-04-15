@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 # download Vault by specifying the version
-VAULT="1.5.5"
+#VAULT="1.5.5"
 
 Vagrant.configure("2") do |config|
     config.vm.box = "hashicorp/bionic64"
