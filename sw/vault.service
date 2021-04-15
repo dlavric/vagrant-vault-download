@@ -13,7 +13,11 @@ StartLimitIntervalSec=10
 [Service]
 KillMode=process
 KillSignal=SIGINT
+# DO NOT USE THIS ON PRODUCTION!
+# Warning: Never, ever, ever run a "dev" mode server in production. 
+# It is insecure and will lose data on every restart (since it stores data in-memory). It is only made for development or experimentation.
 Environment=VAULT_DEV_ROOT_TOKEN_ID=changeme
+# DO NOT USE THIS ON PRODUCTION!
 ExecStart=/usr/local/bin/vault server -config=/etc/vault.d/ -dev -dev-listen-address=0.0.0.0:8200
 ExecStartPost=/bin/sleep 10
 # DO NOT USE THIS ON PRODUCTION!
