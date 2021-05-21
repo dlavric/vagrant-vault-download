@@ -1,0 +1,5 @@
+scripts/azurerm.sh
+.terraform
+.terraform.lock.hcl
+okta-api.sh
+transit-secret-engine/
